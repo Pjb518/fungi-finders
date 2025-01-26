@@ -370,7 +370,7 @@
 		background-color: var(--background-main);
 
 		&[data-section-variant="hero"] {
-			background-image: url("/assets/hero.webp");
+			background-image: url("assets/hero.webp");
 			background-size: cover;
 			background-position: center;
 			text-align: center;
