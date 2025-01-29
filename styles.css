@@ -393,6 +393,7 @@
 		}
 
 		@media screen and (width < 760px) {
+			display: none;
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -413,6 +414,11 @@
 				margin-block-start: 1.5rem;
 				padding-block-start: 1.5rem;
 				border-block-start: 2px solid var(--background-accent-light);
+			}
+
+			/* Selects the primary navigation when aria-expanded is set to true on the nav button */
+			[aria-expanded="true"] ~ & {
+				display: block;
 			}
 		}
     }
