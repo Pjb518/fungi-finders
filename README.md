@@ -9,3 +9,5 @@ WIP.
 ![](https://github.com/Pjb518/fungi-finders/blob/main/assets/lighthouse/lighthouse_best-practices.svg)
 ![](https://github.com/Pjb518/fungi-finders/blob/main/assets/lighthouse/lighthouse_performance.svg)
 ![](https://github.com/Pjb518/fungi-finders/blob/main/assets/lighthouse/lighthouse_seo.svg)
+
+The [Mushroom](https://icons8.com/icon/10095/mushroom) icon used as a favicon is by [Icons8](https://icons8.com).
