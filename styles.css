@@ -150,6 +150,30 @@
 		--border-radius-3: 0.75rem;
 	}
 
+	@font-face {
+		src: url("fonts/Outfit-VariableFont_wght.woff2")
+			format("woff2 supports variations"),
+			url("fonts/Outfit-VariableFont_wght.woff2")
+			format("woff2-variations");
+		font-family: "Outfit";
+		font-display: swap;
+		font-weight: 100 1000;
+	}
+
+	@font-face {
+		src: url("fonts/FiraSans-Regular.woff2") format("woff2");
+		font-family: "Fira Sans";
+		font-display: swap;
+		font-weight: 400;
+	}
+
+	@font-face {
+		src: url("fonts/FiraSans-Bold.woff2") format("woff2");
+		font-family: "Fira Sans";
+		font-display: swap;
+		font-weight: 700;
+	}
+
 	html {
 		font-family: var(--ff-body);
 		line-height: 1.6;
