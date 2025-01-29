@@ -378,6 +378,11 @@
 		}
 	}
 
+	.cta-image {
+		width: 100%;
+		height: auto;
+	}
+
     .primary-nav {
 		ul {
 			display: flex;
