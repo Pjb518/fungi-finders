@@ -428,6 +428,11 @@
 		background: transparent;
 		border: 0;
 		cursor: pointer;
+		display: none;
+
+		@media screen and (width < 760px){
+			display: block;
+		}
 	}
 
 	.section {
