@@ -49,28 +49,6 @@ globalThis.addEventListener("DOMContentLoaded", async () => {
 
 	const mushroomCardsWrapper = document.getElementById("mushroom-guide-cards");
 	mushroomCardsWrapper.append(...mushroomCards);
-
-	// <article class="mushroom-card"
-	// 	<h3>Chanterelle</h3>
-
-	// 	<ul class="mushroom-card__tag-list" role="list">
-	// 		<li class="mushroom-card__tag" data-toxicity="edible">
-	// 			<span class="visually-hidden">This mushroom is </span> edible
-	// 		</li>
-
-	// 		<li class="mushroom-card__tag" data-season="summer">
-	// 			<span class="visually-hidden">The best time to harvest this mushroom is </span> summer
-	// 		</li>
-	// 	</ul>
-
-	// 	<p>
-	// 		Golden-yellow, funnel-shaped mushroom with false gills
-	// 	</p>
-
-	// 	<strong class="mushroom-card__warnings">
-	// 		<span>Important notes:</span> Has toxic lookalikes—learn proper identification
-	// 	</strong>
-	// </article>
 });
 
 globalThis.addEventListener("DOMContentLoaded", () => {
