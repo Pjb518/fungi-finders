@@ -176,6 +176,7 @@
 
 	html {
 		font-family: var(--ff-body);
+		font-variant-ligatures: none;
 		line-height: 1.6;
 		width: 100vw;
 		overflow-x: clip;
@@ -263,11 +264,6 @@
 		}
 	}
 
-	/* Selects everything but the first child element of flow */
-	.flow > * + * {
-		margin-block-start: 1em;
-	}
-
 	.equal-columns {
 		display: grid;
 		gap: var(--equal-columns-gap, 1.5rem);
@@ -285,6 +281,17 @@
 		&[data-vertical-alignment="centered"] {
 			--equal-columns-vertical-alignment: center;
 		}
+	}
+
+	/* Selects everything but the first child element of flow */
+	.flow > * + * {
+		margin-block-start: 1em;
+	}
+
+	.grid-auto-fit {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
 	}
 
 	.site-footer,
@@ -333,7 +340,7 @@
 	.card {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: var(--card-gap, 1rem);
 		padding: 1rem;
 		background-color: var(--background-light);
 		border-radius: var(--border-radius-3);
@@ -346,9 +353,9 @@
 	}
 
 	.card-heading {
-		font-size: var(--font-size-heading-sm);
+		font-size: var(--card-title-font-size, var(--font-size-heading-sm));
 		font-weight: 700;
-		color: var(--text-brand);
+		color: var(--card-title-color, var(--text-brand));
 	}
 
 	.card-list {
@@ -383,6 +390,52 @@
 	.cta-image {
 		width: 100%;
 		height: auto;
+	}
+
+	.mushroom-guide {
+		--card-gap: 0.75rem;
+		--card-title-font-size: var(--font-size-lg);
+		--card-title-color: var(--text-high-contrast);
+	}
+
+	.mushroom-card__tag-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+
+		li {
+			padding: 0.125rem 0.375rem;
+			font-family: var(--ff-heading);
+			font-size: var(--font-size-sm);
+			line-height: 1;
+			color: var(--text-high-contrast);
+			border-radius: var(--border-radius-1);
+			background-color: var(--background-accent-main);
+
+			&[data-season="fall"] {
+				background-color: var(--clr-orange-500);
+			}
+
+			&[data-season="spring"] {
+				background-color: var(--clr-teal-500);
+			}
+
+			&[data-toxicity="toxic"] {
+				background-color: var(--clr-red-500);
+			}
+		}
+	}
+
+	.mushroom-card__notes {
+		margin-block-start: auto;
+		padding: 0.75rem;
+		font-weight: 400;
+		background: var(--background-extra-light);
+		border-radius: var(--border-radius-2);
+
+		span {
+			font-weight: 700;
+		}
 	}
 
     .primary-nav {

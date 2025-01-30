@@ -14,7 +14,7 @@
 
     <!-- Preloads -->
     <link rel="preload" as="style" href="styles.css" type="text/css">
-    <link rel="preload" as="script" href="main.js" type="text/javascript">
+    <link rel="preload" as="script" href="main.js" type="text/javascript crossorigin">
     <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high" type="image/webp">
     <link rel="preload" as="font" href="fonts/Outfit-VariableFont_wght.woff2" fetchpriority="high" type="font/woff2" crossOrigin>
     <link rel="preload" as="font" href="fonts/FiraSans-Regular.woff2" fetchpriority="high" type="font/woff2" crossOrigin>
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Load scripts -->
-    <script src="main.js" defer fetchpriority="low"></script>
+    <script type="module" src="main.js" defer fetchpriority="low"></script>
 </head>
 <body>
     <a class="skip-to-main" href="#main">Skip to main</a>

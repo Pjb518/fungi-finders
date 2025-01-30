@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Chanterelle",
+        "description": "Golden-yellow, funnel-shaped mushroom with false gills",
+        "harvestSeason": "summer",
+        "notes": "Has toxic lookalikes—learn proper identification.",
+        "isToxic": false
+    },
+    {
+        "name": "Morel",
+        "description": "Distinctive honeycomb-like cap structure",
+        "harvestSeason": "spring",
+        "notes": "Must be cooked before eating.",
+        "isToxic": true
+    },
+    {
+        "name": "Chicken of the Woods",
+        "description": "Bright orange bracket fungus with yellow edges",
+        "harvestSeason": "summer",
+        "notes": "Avoid if growing on certain tree species.",
+        "isToxic": false
+    },
+    {
+        "name": "Death Cap",
+        "description": "Pale green to white cap with white gills",
+        "harvestSeason": "summer",
+        "notes": "Extremely toxic—study for safety awareness.",
+        "isToxic": true
+    },
+    {
+        "name": "Oyster Mushroom",
+        "description": "Fan-shaped caps growing in clusters",
+        "harvestSeason": "fall",
+        "notes": "Great beginner mushroom, few lookalikes.",
+        "isToxic": false
+    },
+    {
+        "name": "Lion's Mane",
+        "description": "White, shaggy appearance like a lion's mane",
+        "harvestSeason": "fall",
+        "notes": "No toxic lookalikes.",
+        "isToxic": false
+    },
+    {
+        "name": "Destroying Angel",
+        "description": "Pure white mushroom with a sack-like base",
+        "harvestSeason": "summer",
+        "notes": "Deadly toxic—study for safety awareness.",
+        "isToxic": true
+    },
+    {
+        "name": "King Bolete",
+        "description": "Large brown cap with thick stem",
+        "harvestSeason": "summer",
+        "notes": "Learn to distinguish from similar species.",
+        "isToxic": false
+    },
+    {
+        "name": "Shaggy Mane",
+        "description": "Distinctive honeycomb-like cap structure",
+        "harvestSeason": "fall",
+        "notes": "Must be harvested and eaten quickly.",
+        "isToxic": false
+    },
+    {
+        "name": "Maitake",
+        "description": "Large, feathery clusters with overlapping gray-brown caps",
+        "harvestSeason": "fall",
+        "notes": "Also known as Hen of the Woods—no toxic lookalikes.",
+        "isToxic": false
+    },
+    {
+        "name": "False Morel",
+        "description": "Brain-like, reddish-brown cap with irregular shape",
+        "harvestSeason": "spring",
+        "notes": "Highly toxic—often confused with true morels",
+        "isToxic": true
+    },
+    {
+        "name": "Matsutake",
+        "description": "White to brown cap with thick stem and distinct spicy aroma",
+        "harvestSeason": "fall",
+        "notes": "Verify identification—has toxic lookalikes.",
+        "isToxic": false
+    }
+]
