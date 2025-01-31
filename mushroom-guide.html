@@ -15,6 +15,7 @@
     <!-- Preloads -->
     <link rel="preload" as="style" href="styles.css" type="text/css">
     <link rel="preload" as="script" href="main.js" type="text/javascript" crossorigin>
+    <link rel="preload" as="script" href="mushroom-cards.js" type="text/javascript" crossorigin>
     <link rel="preload" as="fetch" href="data/mushrooms.json" type="application/json" crossorigin>
 
     <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high" type="image/webp">
@@ -26,7 +27,8 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Load scripts -->
-    <script type="module" src="main.js" defer fetchpriority="low"></script>
+    <script type="module" src="main.js" defer></script>
+    <script type="module" src="mushroom-cards.js" defer fetchpriority="low"></script>
 </head>
 <body>
     <a class="skip-to-main" href="#main">Skip to main</a>
@@ -95,14 +97,16 @@
             <h2 class="section-heading">Get to know your mushrooms</h2>
 
             <search class="flex-group">
-                <select name="" id="">
+                <label class="visually-hidden" for="seasonFilter">Select a harvest season</label>
+                <select name="seasonFilter" id="seasonFilter">
                     <option value="all">Season: All</option>
                     <option value="spring">Spring</option>
                     <option value="summer">Summer</option>
                     <option value="fall">Fall</option>
                 </select>
 
-                <select name="" id="">
+                <label class="visually-hidden" for="toxicityFilter">Select a toxicity</label>
+                <select name="toxicityFilter" id="toxicityFilter">
                     <option value="all">Type: All</option>
                     <option value="edible">Edible</option>
                     <option value="toxic">Toxic</option>
