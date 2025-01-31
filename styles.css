@@ -286,6 +286,11 @@
 		&[data-vertical-alignment="centered"] {
 			--equal-columns-vertical-alignment: center;
 		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 	
 	.flex-group {
