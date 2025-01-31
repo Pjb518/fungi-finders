@@ -19,6 +19,7 @@ function createMushroomCard(mushroom) {
 
 	const card = document.createElement("article");
 	card.classList.add(["card"]);
+	card.style.viewTransitionName = mushroom.name;
 	card.append(title, tagList, description, notes);
 
 	return card;
@@ -42,7 +43,7 @@ async function loadMushroomData() {
 }
 
 function renderMushroomCards() {
-	document.startViewTransition(() => {
+	const render = () => {
 		mushroomCardsWrapper.innerHTML = "";
 
 		if (!mushroomList.items.length) {
@@ -57,7 +58,13 @@ function renderMushroomCards() {
 			const mushroomCard = createMushroomCard(mushroomData);
 			mushroomCardsWrapper.append(mushroomCard);
 		}
-	});
+	};
+
+	if (document.startViewTransition) {
+		document.startViewTransition(render);
+	} else {
+		render();
+	}
 }
 
 const mushroomList = new MushroomList();
