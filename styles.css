@@ -299,10 +299,10 @@
 		margin-block-start: 1em;
 	}
 
-	.grid-auto-fit {
+	.grid-auto-fill {
 		display: grid;
 		gap: 1rem;
-		grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(min(16rem, 100%), 1fr));
 	}
 
 	.site-footer,
@@ -522,6 +522,10 @@
 		span {
 			font-weight: 700;
 		}
+	}
+
+	.no-matches {
+		grid-column: 1 / -1;
 	}
 
     .primary-nav {

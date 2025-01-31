@@ -44,6 +44,14 @@ async function loadMushroomData() {
 function renderMushroomCards() {
 	mushroomCardsWrapper.innerHTML = "";
 
+	if (!mushroomList.items.length) {
+		const noResults = document.createElement("div");
+		noResults.classList.add(["no-matches"]);
+		noResults.innerText = "No matches for these filters.";
+
+		mushroomCardsWrapper.append(noResults);
+	}
+
 	for (const mushroomData of mushroomList.items) {
 		const mushroomCard = createMushroomCard(mushroomData);
 		mushroomCardsWrapper.append(mushroomCard);
