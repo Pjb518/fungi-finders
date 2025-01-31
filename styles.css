@@ -150,6 +150,10 @@
 		--border-radius-3: 0.75rem;
 	}
 
+	@view-transition {
+		navigation: auto;
+	}
+
 	@font-face {
 		src: url("fonts/Outfit-VariableFont_wght.woff2")
 			format("woff2 supports variations"),
