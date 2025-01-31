@@ -180,6 +180,11 @@
 		line-height: 1.6;
 		width: 100vw;
 		overflow-x: clip;
+		scroll-padding: 2rem;
+
+		@media (prefers-reduced-motion: no-preference) {
+			scroll-behavior: smooth;
+		}
 	}
 
 	body {
