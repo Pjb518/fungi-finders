@@ -282,6 +282,12 @@
 			--equal-columns-vertical-alignment: center;
 		}
 	}
+	
+	.flex-group {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
 
 	/* Selects everything but the first child element of flow */
 	.flow > * + * {
@@ -337,6 +343,14 @@
 }
 
 @layer components {
+	select {
+		padding: 0.5rem 1rem;
+		color: var(--text-high-contrast);
+		background-color: var(--background-accent-main);
+		border: 0;
+		border-radius: var(--border-radius-2);
+	}
+
 	.card {
 		display: flex;
 		flex-direction: column;
@@ -396,12 +410,6 @@
 		--card-gap: 0.75rem;
 		--card-title-font-size: var(--font-size-lg);
 		--card-title-color: var(--text-high-contrast);
-	}
-
-	.mushroom-card__tag-list {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.5rem;
 
 		li {
 			padding: 0.125rem 0.375rem;

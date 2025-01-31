@@ -1,11 +1,11 @@
 function createMushroomCards(mushroomData) {
 	return mushroomData.map((mushroom) => {
 		const title = document.createElement("h3");
-		title.classList.add(["mushroom-card__title"]);
+		title.classList.add(["card-heading"]);
 		title.innerText = mushroom.name;
 
 		const tagList = document.createElement("ul");
-		tagList.classList.add(["mushroom-card__tag-list"]);
+		tagList.classList.add(["flex-group"]);
 		tagList.setAttribute("role", "list");
 		tagList.append(...createMushroomTags(mushroom));
 
