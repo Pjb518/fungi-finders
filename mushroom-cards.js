@@ -69,6 +69,7 @@ globalThis.addEventListener("DOMContentLoaded", async () => {
 
 	for (const filterType of ["season", "toxicity"]) {
 		const selectElement = document.getElementById(`${filterType}Filter`);
+		selectElement.removeAttribute("hidden");
 
 		selectElement.addEventListener("change", function () {
 			mushroomList.updateFilterValue(filterType, this.value);
