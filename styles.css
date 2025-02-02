@@ -578,6 +578,29 @@
 				border-block-start: 2px solid var(--background-accent-light);
 			}
 
+			a {
+				--animation-delay: 0.125s;
+				--animation-duration: 0.375s;
+
+				color: var(--clr-white);
+				translate: 0 0;
+				opacity: 1;
+				transition: translate var(--animation-duration) var(--animation-delay), opacity var(--animation-duration) var(--animation-delay);
+
+				@starting-style {
+					opacity: 0;
+					translate: 50% 0;
+				}
+			}
+
+			li:nth-child(2) a {
+				--animation-delay: 0.25s;
+			}
+
+			li:nth-child(3) a {
+				--animation-delay: 0.375s;
+			}
+
 			/* Selects the primary navigation when aria-expanded is set to true on the nav button */
 			[aria-expanded="true"] ~ & {
 				display: block;
@@ -706,6 +729,11 @@
 			display: block;
 			font-size: var(--font-size-heading-xl);
 		}
+	}
+
+	.resizing * {
+		animation: none;
+		transition: none;
 	}
 
 	.section-heading {

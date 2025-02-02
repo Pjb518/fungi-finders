@@ -2,11 +2,11 @@ import { MushroomList } from "./modules/mushroom-list.js";
 
 function createMushroomCard(mushroom) {
 	const title = document.createElement("h3");
-	title.classList.add(["card-heading"]);
+	title.classList.add("card-heading");
 	title.innerText = mushroom.name;
 
 	const tagList = document.createElement("ul");
-	tagList.classList.add(["flex-group"]);
+	tagList.classList.add("flex-group");
 	tagList.setAttribute("role", "list");
 	tagList.append(...createMushroomTags(mushroom));
 
@@ -14,11 +14,11 @@ function createMushroomCard(mushroom) {
 	description.innerText = mushroom.description;
 
 	const notes = document.createElement("strong");
-	notes.classList.add(["mushroom-card__notes"]);
+	notes.classList.add("mushroom-card__notes");
 	notes.innerHTML = `<span>Important information:</span> ${mushroom.notes}`;
 
 	const card = document.createElement("article");
-	card.classList.add(["card"]);
+	card.classList.add("card");
 	card.style.viewTransitionName = mushroom.name;
 	card.append(title, tagList, description, notes);
 
@@ -48,7 +48,7 @@ function renderMushroomCards() {
 
 		if (!mushroomList.items.length) {
 			const noResults = document.createElement("div");
-			noResults.classList.add(["no-matches"]);
+			noResults.classList.add("no-matches");
 			noResults.innerText = "No matches for these filters.";
 
 			mushroomCardsWrapper.append(noResults);
