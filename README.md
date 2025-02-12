@@ -2,6 +2,8 @@
 
 A toy website with a responsive layout to experiment with modern CSS approaches, such as layers. At present, the site is pure HTML, CSS, and JavaScript.
 
+The site uses a service worker to implement a client-side caching strategy, enabling offline access and more efficient page loads.
+
 ## Attributions
 
 The [original designs can be found here](https://www.figma.com/design/XV3mC19r1ih4SymTnKQu4f/FungiFinders).
