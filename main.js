@@ -25,3 +25,19 @@ globalThis.addEventListener("DOMContentLoaded", () => {
 
 	resizeObserver.observe(document.body);
 });
+
+if ("serviceWorker" in navigator) {
+	globalThis.addEventListener("load", async () => {
+		try {
+			const workerRegistration =
+				await navigator.serviceWorker.register("service-worker.js");
+
+			console.log(
+				"ServiceWorker registration successful with scope: ",
+				workerRegistration.scope,
+			);
+		} catch (error) {
+			console.log("ServiceWorker registration failed: ", error);
+		}
+	});
+}
