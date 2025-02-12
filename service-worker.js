@@ -53,7 +53,19 @@ self.addEventListener("install", async (event) => {
 			.open(CACHE_NAME)
 			.then((cache) => {
 				console.log("Opened cache");
-				return cache.addAll([...STATIC_ASSETS, ...DYNAMIC_ASSETS]);
+
+				const stack = [];
+
+				for (const file of [...STATIC_ASSETS, ...DYNAMIC_ASSETS]) {
+					stack.push(
+						cache
+							.add(file)
+							.catch((_) => console.error(`can't load ${file} to cache`)),
+					);
+				}
+
+				return Promise.all(stack);
+				// return cache.addAll([...STATIC_ASSETS, ...DYNAMIC_ASSETS]);
 			})
 			.catch((error) => {
 				console.error("Failed to open cache or add resources", error);
